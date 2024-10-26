@@ -1,0 +1,554 @@
+/*----------------Header CSS ---------------------*/
+*{
+    margin: 0% auto;
+    padding: 0% auto;
+    box-sizing: border-box;
+   
+  }
+  header {
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+        background-image: linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
+    }
+    
+    nav{
+      justify-content: space-between;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .nav-links{
+      flex: 1;
+      text-align: center;
+      color: white;
+    }
+    
+    .nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      position: relative;
+    }
+    .nav-links ul li a{
+      color: #fff;
+      text-decoration: none;
+    
+    }
+    
+    .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #3085C3;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+      width: 100%;
+    }
+    
+    
+    .title{
+        font-size: 40px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-shadow: 2px 2px 4px gold;
+        background-color: rgba(0, 0, 0, 0.418);
+        border-radius: 100%;
+        padding: 6px 12px;
+        margin: 0 auto;
+        width: 400px;
+      
+    }
+    .timeLbl {
+        font-size: 300%; 
+        font-weight: bold;
+      }
+    
+    #location-input {
+        padding: 10px;
+        width: 60%;
+        border: none;
+        border-radius: 10px;
+        color: black;   
+    }
+    
+    #search-button {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .heders{
+      font-size: 30px;
+      font-weight: bold;
+      background-color: #333;
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      text-align: center;
+    }
+    
+    
+    /*----------------Header CSS END ---------------------*/
+    
+    /* --------------------------------Current Weather card-------------------------------------- */
+    #current-weather{
+      background-color: #ffffff91;
+       padding: 20px;
+       border-radius: 5px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     }
+    .weather-card {
+      background-color: #ffffffa8;
+      border-radius: 10px;
+      padding: 1%;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .weather-card:hover {
+      transform: scale(1.02);
+    }
+    
+    .weather-info {
+      flex: 1;
+      margin-right: 20px;
+      background-color: transparent;
+    }
+    
+    .location {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .temperature {
+      font-size: 4rem;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    
+    .description {
+      font-size: 1.4rem;
+      margin: 0;
+    }
+    
+    .weather-icon img {
+      width: 120px;
+      height: 120px;
+      padding: 5px;
+    }
+    
+    .tblW{
+      width: 100%;
+    }
+    
+    .tblW td{
+      text-align: center;
+      border: 2px solid #fff;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+    }
+    
+    /* -----------------------------------------------------------------Weather Forecast------------------------------------------------------- */
+    .tblForcast{
+      width: 100%;
+    }
+    
+    .tblForcast td{
+      border: 2px solid #fff;
+      padding: 10px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+    
+    .img{
+      width: 70%;
+    
+    }
+    
+    .date-serch{
+      margin: 7px;
+      text-align: center;
+      margin: 20px;
+    }
+    
+    .dark-mode {
+      background-color: #A4B0BE;
+      color: white;
+      #weather-details{
+        color: #222F3E;
+      }
+    }
+    #weather-forecast {
+        background-color: #fff;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    
+    #weather-map {
+        background-color: #fff;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .map-d {
+      width: 100%;
+      height: 400px;
+      border: 1px solid rgb(255, 255, 255);
+    }
+    
+  
+  
+    .homebtn{
+      background-image: url(MusicGig.gif);
+      background-position: center;
+      background-size: 95%;
+      width: 80px;
+      text-align: center;
+      box-shadow: 2px 1px 0px darkblue;
+      border-radius: 25px;
+      margin-right: 5px;
+      display: inline-block;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .homebtn ion-icon{
+      color: rgba(255, 217, 0, 0.664);
+      font-size: 25px;
+      
+    }
+    
+    .homebtn:hover{
+      box-shadow: 0px 2px 20px gold;
+    }
+    .homebtn ion-icon:hover{
+      color: gold;
+    }
+    
+    nav{
+      margin: 0% auto;
+      position: relative; 
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+    
+  
+    @media screen and (min-width: 365px) {
+        body{
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          height: auto;
+          background-image: linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
+        }
+        .user-interface {
+            flex-direction: column;
+        }
+    
+        #location-input {
+            width: 50%;
+            text-align: center;
+        }
+    
+        .weather-icon img {
+          box-shadow: 0px 2px 10px black;
+          top: 5px;
+          left: 5px;
+        }
+        .temperature {
+          font-size: 2rem;
+          font-weight: bold;
+          margin: 10px 0;
+        }
+        .timeLbl {
+          font-size: 200%; 
+          font-weight: bold;
+        }
+    
+        .location {
+          font-size: 1.2rem;
+          font-weight: bold;
+          margin: 0;
+        }
+    
+        .heders{
+          font-size: 25px;
+          font-weight: bold;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          background-color: rgba(0, 0, 0, 0.637);
+          color: rgba(194, 47, 96, 0.658);
+          text-shadow: 1px 1px 2px darkblue;
+          text-align: center;
+          border-radius: 50px;
+        }
+    
+        #location-input {
+          border: 2px solid gold;
+          padding: 5px;
+          width: 50%;
+          border-radius: 20px;
+          color: black;  
+          margin: 0 auto;
+          margin-bottom: 10px; 
+      }
+      
+      #search-button {
+          border: 2px solid rgba(255, 217, 0, 0.856);
+          background-color: darkblue;
+          color: #fff;
+          text-shadow: 2px 2px 4px gold;
+          background-image: url(lollipop_3GIF.gif);
+          background-position: center;
+          background-size: cover;
+          padding: 5px 10px;
+          border-radius: 15px;
+          cursor: pointer;
+          margin: 0 auto;
+          box-shadow: 0px 2px 10px black;
+      }
+      #search-button:hover{
+        color:gold;
+        text-shadow: 1px 1px 2px darkblue;
+        box-shadow: 0px 2px 15px gold;
+      }
+    
+      .title{
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px 4px gold;
+        font-family: Georgia, 'Times New Roman', Times, serif;  
+        background-color: rgba(0, 0, 0, 0.418);
+        border-radius: 100%;
+        padding: 6px 12px;
+        margin-bottom: 10px;
+    }
+    .h3{ 
+      color: rgba(194, 47, 96, 0.658);
+      text-shadow: 1px 1px 2px darkblue;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0 auto;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.534);
+      border-radius: 100%;
+      width: 250px;
+     
+    }
+    .h3 ion-icon{
+      color: rgba(255, 217, 0, 0.425);
+      font-size: 20px;
+    }
+    
+    
+    .homebtn{
+      background-image: url(MusicGig.gif);
+      background-position: center;
+      background-size: 95%;
+      width: 80px;
+      text-align: center;
+      box-shadow: 2px 1px 0px darkblue;
+      border-radius: 25px;
+      margin-right: 5px;
+      display: inline-block;
+      display: inline-block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .homebtn ion-icon{
+      color: rgba(255, 217, 0, 0.664);
+      font-size: 25px;
+      
+    }
+    
+    .homebtn:hover{
+      box-shadow: 0px 2px 20px gold;
+    }
+    .homebtn ion-icon:hover{
+      color: gold;
+    }
+    
+    nav{
+      margin: 0% auto;
+      position: relative; 
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      right: 19%;
+    }
+    
+    .nav-links{
+      flex: 1;
+      text-align: right;
+    }
+    
+    .nav-links ul li{
+      list-style: none;
+      display: inline-block;
+      padding: 5px 2px;
+      position: relative;
+    }
+    .nav-links ul li a{
+      color: #fff;
+      text-decoration: none;
+      font-size: 8px;
+    
+    }  
+    .tblW td{
+      font-size: 10px;
+      text-align: center;
+      border: 2px solid #fff;
+      padding: 5px;
+      background-color: rgba(0, 0, 0, 0.507);
+      color: #fff;
+    }
+    .tblForcast td{
+      font-size: 8px;
+      border: 2px solid #fff;
+      padding: 5px;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+    #current-weather{
+      background-color: rgba(0, 0, 139, 0.336);
+      background-image: url(lollipop_3GIF.gif);
+      background-position: center;
+      background-size: cover;
+      
+      
+      border-radius: 50px;
+      box-shadow: 0px 2px 20px gold;
+      height: auto;
+      width: 365px;
+      margin: 0 auto;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      border: 6px solid rgba(255, 217, 0, 0.671);
+     }
+    
+     #weather-forecast {
+      background-color: transparent;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 50px
+    }
+  
+  
+    @media screen and (min-width: 365px) {
+      body{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: auto;
+        background-image: linear-gradient(to right,black,darkblue,lightgreen,maroon,black);
+      }
+      .user-interface {
+          flex-direction: column;
+          margin-top: 10px;
+      }
+    
+      #location-input {
+          width: 80%;
+      }
+      #location-input:focus{
+        background-color: lightskyblue;
+      }
+    
+      .weather-icon img {
+        border-radius: 20px;
+        border: 4px solid rgba(255, 217, 0, 0.589);
+        top: 5px;
+        left: 5px;
+        opacity: 80%;
+      }
+      .temperature {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .timeLbl {
+        font-size: 100%; 
+        font-weight: bold;
+      }
+    
+      .description {
+        font-size: 0.5rem;
+        margin: 0;
+      }
+    
+      .location {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin: 0;
+      }
+      .homebtn{
+        background-image: url(MusicGig.gif);
+        background-position: center;
+        background-size: 95%;
+        width: 80px;
+        text-align: center;
+        box-shadow: 2px 1px 0px darkblue;
+        border-radius: 25px;
+        margin-right: 5px;
+        display: inline-block;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .homebtn ion-icon{
+        color: rgba(255, 217, 0, 0.664);
+        font-size: 25px;
+        
+      }
+      
+      .homebtn:hover{
+        box-shadow: 0px 2px 20px gold;
+      }
+      .homebtn ion-icon:hover{
+        color: gold;
+      }
+      
+      nav{
+        margin: 0% auto;
+        position: relative; 
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        
+      }
+    }}
