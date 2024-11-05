@@ -322,7 +322,7 @@
           background-color: darkblue;
           color: #fff;
           text-shadow: 2px 2px 4px gold;
-          background-image: url(WeatherGif.gif);
+          background-image: url(lollipop_3GIF.gif);
           background-position: center;
           background-size: cover;
           padding: 5px 10px;
@@ -443,9 +443,6 @@
     }
     #current-weather{
       background-color: rgba(0, 0, 139, 0.336);
-      background-image: url(lollipop_3GIF.gif);
-      background-position: center;
-      background-size: cover;
       border-radius: 50px;
       box-shadow: 0px 2px 20px gold;
       height: auto;
@@ -455,6 +452,7 @@
       text-align: center;
       align-items: center;
       border: 6px solid rgba(255, 217, 0, 0.671);
+     
      }
     
      #weather-forecast {
