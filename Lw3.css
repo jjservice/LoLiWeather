@@ -441,9 +441,7 @@
     }
     #current-weather{
       background-color: rgba(0, 0, 139, 0.336);
-      background-image: url(lollipop_3GIF.gif);
-      background-position: center;
-      background-size: cover;
+     
       
       
       border-radius: 50px;
