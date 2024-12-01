@@ -109,8 +109,11 @@
     text-shadow: 2px 2px 2px darkblue;
    }
    .h3 ion-icon{
-    color: rgba(255, 217, 0, 0.616);
+    color: wheat;
    } 
+   body.lightPlayer .h3 ion-icon{
+    color: rgba(255, 217, 0, 0.616);
+   }
     .title{
         margin: 0 auto;
         font-size: 40px;
@@ -291,7 +294,7 @@
       position: relative;
       background-image: url(MusicGig.gif);
       background-position: center;
-      background-size: 95%;
+      background-size: 10%;
       width: 80px;
       text-align: center;
       box-shadow: 2px 1px 0px darkblue;
@@ -304,12 +307,22 @@
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
       top: 10px;
-   
+      transition: 1s ease-in-out;
+
+    }
+    body.lightPlayer .homebtn{
+      background-image: url(MusicGig.gif);
+      background-position: center;
+      background-size: 95%;
+      
     }
     .homebtn ion-icon{
-      color: rgba(255, 217, 0, 0.664);
+      color: rgba(245, 222, 179, 0.699);
       font-size: 25px;
       
+    }
+    body.lightPlayer .homebtn ion-icon{
+      color: rgba(255, 217, 0, 0.664);
     }
     
     .homebtn:hover{
