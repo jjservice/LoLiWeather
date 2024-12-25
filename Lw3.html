@@ -94,7 +94,6 @@
       <button id="search-button">Search</button>
       <!-- <button onclick="darkMode()">DarkMood</button> -->
     </div>
-    <h3 class="h3">&copysr;JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></h3>
   </section>
 
 
@@ -106,6 +105,19 @@
     <div id="map" class="map-d" style="display: none;">
     </div>
   </section>
+
+  <footer>
+    <div class="back-btn"><a href="javascript:history.back()"><ion-icon name="arrow-back-sharp"></ion-icon></a></div>
+    <p>&copy;<span id="currentYear"></span>JJPoweredIT<ion-icon name="bonfire-sharp"></ion-icon></p>
+   </footer>
+  
+   <script>
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+    
+    // Find the element with id "currentYear" and set its content to the current year
+    document.getElementById("currentYear").textContent = currentYear;
+   </script>
 
  
 </body>
